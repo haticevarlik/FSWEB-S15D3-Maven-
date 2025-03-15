@@ -53,7 +53,7 @@ public class Main {
         Set<Employee> tempList = new HashSet<>();
         Set<Employee> duplicateEmployees = new HashSet<>();
         for (Employee e:employeeList){
-            if(!tempList.add(e)){
+            if(!tempList.add(e) || e==null){
                 duplicateEmployees.add(e);
             }
         }
